@@ -1,11 +1,18 @@
 const btnHamburger = document.querySelector('#btnHamburger');
-btnHamburger.addEventListener('click', function(){
-    console.log('open hamburger');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
 
-    if(btnHamburger.classList.contains('open')){
-        btnHamburger.classList.remove('open');
+btnHamburger.addEventListener('click', function(){
+    console.log('click hamburger');
+
+    if(header.classList.contains('open')){ //Close Hamburger menu
+        header.classList.remove('open'); 
+        overlay.classList.remove('fade-in');
+        overlay.classList.add('fade-out');
     }
-    else{
-        btnHamburger.classList.add('open');
+    else{ //Open Hamburger menu
+        header.classList.add('open');
+        overlay.classList.remove('fade-out');
+        overlay.classList.add('fade-in');
     }
 })
