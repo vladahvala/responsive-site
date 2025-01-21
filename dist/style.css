@@ -287,7 +287,7 @@ button:hover, .button:hover {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 64em) {
-  .hero__text {
+  .hero__text h1 {
     font-size: 3.25rem;
   }
 }

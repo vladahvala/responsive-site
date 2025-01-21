@@ -49,11 +49,13 @@
             line-height: 1.15;
             color: $darkBlue;
             margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large){
+                font-size: $font-xlg;
+            }
         }
 
-        @include breakpoint-up(large){
-            font-size: $font-xlg;
-        }
+       
         
         p{
             line-height: 1.5;
