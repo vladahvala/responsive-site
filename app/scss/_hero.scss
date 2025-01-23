@@ -17,7 +17,7 @@
 
         @include breakpoint-up(medium){
             min-width: 25rem;
-            background-image: center 60%;
+            background-position: center 70%;
         }
 
         @include breakpoint-up(large){
